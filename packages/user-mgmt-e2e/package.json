@@ -1,0 +1,27 @@
+{
+  "name": "@my-apps/user-mgmt-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "name": "user-mgmt-e2e",
+    "projectType": "application",
+    "implicitDependencies": [
+      "user-mgmt"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{workspaceRoot}/coverage/{e2eProjectRoot}"
+        ],
+        "options": {
+          "jestConfig": "packages/user-mgmt-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "user-mgmt:build"
+        ]
+      }
+    }
+  }
+}
