@@ -1,2 +1,2 @@
 pnpm exec nx format:write --skipNxCache
-pnpm exec nx run-many -t lint --skipNxCache
+pnpm exec nx run-many -t lint --fix --skipNxCache
