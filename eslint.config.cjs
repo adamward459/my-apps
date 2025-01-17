@@ -1,4 +1,5 @@
 const nx = require('@nx/eslint-plugin');
+const importPlugin = require('eslint-plugin-import');
 
 module.exports = [
   ...nx.configs['flat/base'],
@@ -25,6 +26,8 @@ module.exports = [
       ],
     },
   },
+  importPlugin.flatConfigs.recommended,
+  importPlugin.flatConfigs.typescript,
   {
     files: [
       '**/*.ts',
@@ -34,7 +37,17 @@ module.exports = [
       '**/*.cjs',
       '**/*.mjs',
     ],
-    // Override or add rules here
-    rules: {},
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
+    rules: {
+      'import/order': [
+        'error',
+        {
+          'newlines-between': 'always',
+        },
+      ],
+    },
   },
 ];
