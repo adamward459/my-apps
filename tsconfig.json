@@ -8,6 +8,9 @@
     },
     {
       "path": "./packages/user-mgmt"
+    },
+    {
+      "path": "./packages/core"
     }
   ]
 }

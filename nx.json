@@ -50,5 +50,12 @@
       },
       "exclude": ["packages/user-mgmt-e2e/**/*", "packages/user-mgmt-e2e/**/*"]
     }
-  ]
+  ],
+  "targetDefaults": {
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  }
 }

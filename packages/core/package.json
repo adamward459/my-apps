@@ -1,0 +1,16 @@
+{
+  "name": "@my-apps/core",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "nx": {
+    "sourceRoot": "packages/core/src",
+    "projectType": "library",
+    "name": "core"
+  }
+}
