@@ -28,7 +28,7 @@
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
     "@types/jest": "29.5.12",
-    "@types/node": "~18.16.9",
+    "@types/node": "~18.19.0",
     "eslint": "9.8.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-import": "2.31.0",
