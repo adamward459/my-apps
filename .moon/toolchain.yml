@@ -1,0 +1,6 @@
+bun:
+  version: 1.2.8
+  dependencyVersionFormat: 'workspace'
+  inferTasksFromScripts: true
+  rootPackageOnly: true
+  syncProjectWorkspaceDependencies: true
