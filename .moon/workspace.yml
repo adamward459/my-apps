@@ -1,2 +1,5 @@
 projects:
   server: apps/server
+
+vcs:
+  defaultBranch: main
