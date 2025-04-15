@@ -15,6 +15,7 @@ This is a monorepo project managed by Moon (moonrepo).
 
 2. Rules
 
+- Use #codebase to read through project
 - Each new file must follow train case naming
 - Use a consistent code style and patterns
 - Use descriptive names for variables and functions
