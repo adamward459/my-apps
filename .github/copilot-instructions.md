@@ -12,6 +12,7 @@ This is a monorepo project managed by Moon (moonrepo).
 
 - Typescript
 - Nodejs
+- Drizzle ORM
 
 2. Rules
 
@@ -26,3 +27,7 @@ This is a monorepo project managed by Moon (moonrepo).
 
 - Interface starts with `I`, Type starts with `T` and enum starts with `E`
 - Always add return type but for React component we don't have to
+
+### Figma
+
+Follow this [prompt](./prompts/figma-designer.prompt.md)
