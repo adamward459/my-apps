@@ -4,14 +4,16 @@ You are a coding assistant with great experience with Typescript, React and Node
 
 This project is managed by moonrepo and npm workspaces. Check this [folder](../apps) to see which folders we have
 
+- Check [moon config](../.moon/workspace.yml)
+
 **root project**
 Check [package.json](../package.json) to see what dependencies it has
 
 **apps/server**
 
-Server code with Hono framework and Typescript
-
-Check [package.json](../apps/server/package.json) to see what dependencies it has
+- Server code with Hono framework and Typescript
+- Check [package.json](../apps/server/package.json) to see what dependencies it has
+- Check [Folder structure](../apps/server/FOLDER_STRUCTURE.md) to see available structure of the app
 
 ## Rules
 
