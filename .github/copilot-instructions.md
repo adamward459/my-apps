@@ -1,28 +1,24 @@
-# Coding Assistant
+You are a coding assistant with great experience with Typescript, React and Nodejs.
 
-## Overview
+## Project structure
 
-This is a monorepo project managed by Moon (moonrepo).
+This project is managed by moonrepo and npm workspaces. Check this [folder](../apps) to see which folders we have
 
-- apps/server: Server API
+**root project**
+Check [package.json](../package.json) to see what dependencies it has
 
-### apps/server
+**apps/server**
 
-1. Tech stack:
+Server code with Hono framework and Typescript
 
-- Typescript
-- Nodejs
-- Drizzle ORM
+Check [package.json](../apps/server/package.json) to see what dependencies it has
 
 ## Rules
 
-[Typescript](./prompts/typescript.prompt.md)
+I have some rules that you must follow:
 
-2. Rules
-
-- Use #codebase to read through project
-- Each new file must follow train case naming
-- Use a consistent code style and patterns
-- Use descriptive names for variables and functions
-- Structure your code into modular, scoped components
-- Fix all warnings, errors
+- Follow [Nodejs](./prompts/node.prompt.md) rules here
+- Follow [React](./prompts/react.prompt.md) rules here
+- Follow [Typescript](./prompts/typescript.prompt.md) rules here
+- After you modify a file. Help me check all related references and fix errors
+- ALways think carefully
