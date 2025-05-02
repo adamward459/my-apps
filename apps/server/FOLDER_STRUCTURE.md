@@ -40,17 +40,17 @@ apps/
 ## Explanation of Key Directories:
 
 1.  **`src/` (Root Files)**:
-    *   `app.ts`: Hono app instance setup, global middleware, mounting feature routes.
-    *   `server.ts`: Starts the actual HTTP server.
-    *   `config.ts`: Loads and exports configuration.
-    *   `db.ts`: Sets up and exports the database client/connection.
-    *   `global.d.ts`: Contains global type declarations or augmentations.
+    - `app.ts`: Hono app instance setup, global middleware, mounting feature routes.
+    - `server.ts`: Starts the actual HTTP server.
+    - `config.ts`: Loads and exports configuration.
+    - `db.ts`: Sets up and exports the database client/connection.
+    - `global.d.ts`: Contains global type declarations or augmentations.
 2.  **`core/`**: Contains application-wide, shared concerns that don't belong to a specific feature. Examples:
-    *   `auth.middleware.ts`: Authentication middleware.
-    *   `ApiError.ts`, `errorHandler.ts`: Centralized error handling components.
-    *   `logger.ts`: Shared logging setup.
+    - `auth.middleware.ts`: Authentication middleware.
+    - `ApiError.ts`, `errorHandler.ts`: Centralized error handling components.
+    - `logger.ts`: Shared logging setup.
 3.  **`features/`**: This is the heart of the structure. Each subdirectory represents a distinct domain or feature (e.g., `users`, `products`).
-    *   **`.routes.ts`**: Defines API endpoints, handlers, and validation for the feature. Imports and uses the feature's service. Mounted in `app.ts`.
-    *   **`.service.ts`**: Contains the core business logic. Orchestrates operations, calls repositories.
-    *   **`.repository.ts`**: Handles data access logic (database interactions).
-    *   **`.types.ts`**: Defines TypeScript interfaces and types specific to the feature.
+    - **`.routes.ts`**: Defines API endpoints, handlers, and validation for the feature. Imports and uses the feature's service. Mounted in `app.ts`.
+    - **`.service.ts`**: Contains the core business logic. Orchestrates operations, calls repositories.
+    - **`.repository.ts`**: Handles data access logic (database interactions).
+    - **`.types.ts`**: Defines TypeScript interfaces and types specific to the feature.
